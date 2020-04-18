@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shequ.mapper.ChoiceMapper">
+
+    <select id="findOptOfQue" resultType="com.shequ.pojo.Choice">
+        select cho.moption,cho.id cid,cho.ch,q.id qid,q.content content
+         from  choice cho
+         inner join question q
+         on cho.q_id = q.id
+         where q.id = #{arg0}
+    </select>
+    
+    <insert id="insertUserSurveyOpt">
+        insert into user_sur_opt(user_sur_id,opt_id)
+        values(#{user_sur_id},#{opt_id})
+    </insert>
+
+    <select id="findUserQueAndOpt" resultType="com.shequ.pojo.Choice">
+        select su.title,q.content,cho.moption
+        from survey su
+        inner join sur_que sq
+        on su.id = sq.su_id
+        inner join question q
+        on q.id = sq.qid
+        inner join user_sur us
+        on us.qid = q.id and us.su_id = su.id
+        inner join user u
+        on u.uid = us.uid
+        inner join user_sur_opt uso
+        on uso.user_sur_id = us.id
+        inner join choice cho
+        on cho.id = uso.opt_id
+        where u.uid = #{arg0}
+    </select>
+
+    <select id="findAllChoice" resultType="com.shequ.pojo.Choice">
+        select ch.id cid ,ch.q_id,ch.moption,q.content from choice ch
+        inner join question q
+        on q.id = ch.q_id
+    </select>
+
+    <select id="findAllChoiceByPage" resultType="com.shequ.pojo.Choice">
+        select ch.id cid ,ch.q_id,ch.moption,q.content from choice ch
+        inner join question q
+        on q.id = ch.q_id
+        limit #{arg0},#{arg1}
+    </select>
+
+    <insert id="insertChoice">
+        insert into choice(q_id,moption)
+        values(#{q_id},#{moption})
+    </insert>
+
+    <delete id="deleteChoiceById">
+       delete from choice
+       where id = #{arg0}
+    </delete>
+
+    <update id="updateChoiceById">
+      update choice
+      set q_id = #{q_id}, moption = #{moption}
+      where id = #{id}
+    </update>
+
+    <select id="findAllUserSurQueAndOpt" resultType="com.shequ.pojo.Choice">
+            select cho.id cid ,su.title,q.content,cho.moption,u.name
+        from survey su
+        inner join sur_que sq
+        on su.id = sq.su_id
+        inner join question q
+        on q.id = sq.qid
+        inner join user_sur us
+        on us.qid = q.id and us.su_id = su.id
+        inner join user u
+        on u.uid = us.uid
+        inner join user_sur_opt uso
+        on uso.user_sur_id = us.id
+        inner join choice cho
+        on cho.id = uso.opt_id
+    </select>
+
+    <select id="findAllUserSurQueAndOptByPage" resultType="com.shequ.pojo.Choice">
+           select cho.id cid ,su.title,q.content,cho.moption,u.name
+        from survey su
+        inner join sur_que sq
+        on su.id = sq.su_id
+        inner join question q
+        on q.id = sq.qid
+        inner join user_sur us
+        on us.qid = q.id and us.su_id = su.id
+        inner join user u
+        on u.uid = us.uid
+        inner join user_sur_opt uso
+        on uso.user_sur_id = us.id
+        inner join choice cho
+        on cho.id = uso.opt_id
+         limit #{arg0},#{arg1}
+    </select>
+
+
+</mapper>

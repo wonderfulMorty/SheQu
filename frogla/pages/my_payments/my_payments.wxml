@@ -1,0 +1,21 @@
+<scroll-view  scroll-y="true"  class="page-body" >
+  <!--list-->
+  <view class="nav_section">
+        <block wx:for="{{list}}">
+            <view class="nav_section_items" >
+                <!--content-->
+                <view class="section_cont">
+                    <view class="section_cont_sub">
+                        <text>缴费项目：{{item.itemName}}</text>
+                    </view>
+                    <view class="section_cont_price">
+                    缴费金额：{{item.payment}}
+                    </view>
+                    <view class="word">
+                        <text>缴费时间：{{item.paytime}}</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+</view>
+</scroll-view>

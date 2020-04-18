@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shequ.mapper.Sur_QueMapper">
+
+    <select id="findAllSur_Que" resultType="com.shequ.pojo.Sur_Que">
+      select sq.id,q.content,s.title from sur_que sq
+        inner join question q
+        on sq.qid = q.id
+        inner join survey s
+        on s.id = sq.su_id
+    </select>
+
+    <select id="findAllSur_QueByPage" resultType="com.shequ.pojo.Sur_Que">
+      select sq.id,q.content,s.title from sur_que sq
+        inner join question q
+        on sq.qid = q.id
+        inner join survey s
+        on s.id = sq.su_id
+       limit #{arg0},#{arg1}
+    </select>
+
+    <insert id="insertSur_Que">
+        insert into sur_que(su_id,qid)
+        values(#{su_id},#{qid})
+    </insert>
+
+    <delete id="deleteSur_QueById">
+       delete from sur_que
+       where id = #{arg0}
+    </delete>
+
+    <update id="updateSur_QueById">
+      update sur_que
+      set su_id = #{su_id},qid= #{qid}
+      where id = #{id}
+    </update>
+
+</mapper>

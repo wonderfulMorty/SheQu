@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shequ.mapper.SurveyMapper">
+
+    <select id="findAllSurvey" resultType="com.shequ.pojo.Survey">
+      select s.* from survey s
+    </select>
+
+    <select id="findAllSurveyByPage" resultType="com.shequ.pojo.Survey">
+      select s.* from survey s
+       limit #{arg0},#{arg1}
+    </select>
+
+    <insert id="insertUserSurvey">
+        insert into user_sur(uid,qid,su_id)
+        values(#{uid},#{qid},#{su_id})
+    </insert>
+
+    <select id="findAllSurveyByUid" resultType="String">
+      select id from user_sur
+      where uid = #{arg0}
+    </select>
+
+    <insert id="insertSurvey" >
+        insert into survey(title)
+        values(#{title})
+    </insert>
+
+
+    <delete id="deleteSurveyById">
+       delete from survey
+       where id = #{arg0}
+    </delete>
+
+    <update id="updateSurveyById">
+      update survey
+      set title = #{title}
+      where id = #{id}
+    </update>
+
+</mapper>

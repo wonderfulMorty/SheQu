@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SheQu:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="efb2eed0-e362-4001-abc4-4b59e02270ea" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/maven/apache-maven-3.5.3-bin/apache-maven-3.5.3" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.5.3-bin\apache-maven-3.5.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YZ0MXjswFCwdX00zBdxWLampdj" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\eclipse_ee_workspace2\SheQu\src\main\resources\mapper" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shequ.controller" />
+      <recent name="com.shequ.service" />
+      <recent name="com.shequ.mapper" />
+      <recent name="com.shequ.pojo" />
+      <recent name="com.shequ.controller.api" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\eclipse_ee_workspace2\SheQu\src\main\webapp\WEB-INF\views" />
+      <recent name="F:\eclipse_ee_workspace2\SheQu\src\main\resources\mapper" />
+      <recent name="F:\eclipse_ee_workspace2\SheQu\src\main\java\com\shequ\util" />
+      <recent name="F:\eclipse_ee_workspace2\SheQu\src\main\webapp" />
+      <recent name="F:\eclipse_ee_workspace2\SheQu\src\main\java\com\shequ\mapper" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.0.M26" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M26" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/SheQu/" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="SheQu:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/SheQu" />
+          </settings>
+        </artifact>
+        <file path="F:/uploads/img">
+          <settings>
+            <option name="CONTEXT_PATH" value="/SheQu/img" />
+          </settings>
+        </file>
+        <file path="F:/uploads/word">
+          <settings>
+            <option name="CONTEXT_PATH" value="/SheQu/word" />
+          </settings>
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_SheQu_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="58508" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SheQu:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="efb2eed0-e362-4001-abc4-4b59e02270ea" name="Default Changelist" comment="" />
+      <created>1583134762044</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583134762044</updated>
+      <workItem from="1583134765629" duration="623000" />
+      <workItem from="1583135464346" duration="11418000" />
+      <workItem from="1583209924997" duration="2234000" />
+      <workItem from="1583213479058" duration="1294000" />
+      <workItem from="1583215399258" duration="6830000" />
+      <workItem from="1583297797035" duration="24143000" />
+      <workItem from="1583417482395" duration="5067000" />
+      <workItem from="1583564642180" duration="8778000" />
+      <workItem from="1583660575384" duration="5256000" />
+      <workItem from="1583730438176" duration="4845000" />
+      <workItem from="1583945111030" duration="1257000" />
+      <workItem from="1584017023114" duration="3948000" />
+      <workItem from="1584073357551" duration="12679000" />
+      <workItem from="1584155972493" duration="9668000" />
+      <workItem from="1584253129996" duration="9606000" />
+      <workItem from="1584331356182" duration="4616000" />
+      <workItem from="1584424408538" duration="1314000" />
+      <workItem from="1584450023405" duration="964000" />
+      <workItem from="1584504664737" duration="5439000" />
+      <workItem from="1584518581193" duration="2184000" />
+      <workItem from="1584527459454" duration="590000" />
+      <workItem from="1584538797116" duration="6665000" />
+      <workItem from="1584598866971" duration="708000" />
+      <workItem from="1584602024102" duration="5343000" />
+      <workItem from="1584607838343" duration="3399000" />
+      <workItem from="1584624036496" duration="1617000" />
+      <workItem from="1584672466257" duration="28025000" />
+      <workItem from="1585839843931" duration="1383000" />
+      <workItem from="1586252823925" duration="1096000" />
+      <workItem from="1586254183445" duration="4798000" />
+      <workItem from="1586393422379" duration="608000" />
+      <workItem from="1586401411753" duration="601000" />
+      <workItem from="1586706559646" duration="28000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

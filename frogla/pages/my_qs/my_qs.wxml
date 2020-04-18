@@ -1,0 +1,14 @@
+<view class="home_address">
+  <view>
+    <text >{{problem[0].title}}</text>
+  </view>
+</view>
+<view class="content" wx:for="{{problem}}" wx:for-index="idx" wx:for-item="item">
+<view class="weui-cells__title  title2">{{idx+1}}.{{item.content}}</view>
+  <view>
+    <view class="weui-cells weui-cells_after-title" >
+      <text>{{item.moption}}</text>
+    </view>
+  </view>
+  </view>
+

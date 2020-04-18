@@ -1,0 +1,15 @@
+<view class="tab-right">
+			<form bindsubmit="pay">
+				<view class="main">
+					<view class="profile-items">
+						<text class="word">缴费项</text>
+						<input name="itemName" focus="true" />
+					</view>
+					<view class="profile-items">
+						<text class="word">金额</text>
+						<input name="payment" maxlength="11" type="number" />
+					</view>
+				</view>
+				<button form-type="submit"> 缴费 </button>
+			</form>
+    </view>

@@ -1,0 +1,17 @@
+<form bindsubmit='buyGoods'>
+<view class="ar_coverpath">
+    <image src="{{gl}}/{{data.goods_img}}" mode="aspectFill"></image>
+</view>
+<view class="ar_cont">
+    <text class="ar_cont_h1">{{data.goods_title}}</text>
+    <text class="ar_cont_price">价格：{{data.goods_price}}</text>
+    <text>   
+{{data.goods_desc}}
+    </text>
+    <view class="ar_line"></view>
+    <text class="ar_cont_h1">商品详情\n</text>
+    <text>发布时间：{{data.publish_time}}\n </text>
+    <text>发布人:{{data.name}}</text>
+    <button class="ar_book" bindtap="bookTap" form-type="submit">立即购买</button>
+</view>
+</form>

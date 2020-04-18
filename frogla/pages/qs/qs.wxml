@@ -1,0 +1,22 @@
+<form bindsubmit='qs_submit'>
+<view class="home_address">
+  <view>
+    <text >{{title}}</text>
+  </view>
+</view>
+<view class="content" wx:for="{{problem}}" wx:for-index="idx" wx:for-item="item">
+<view class="weui-cells__title  title2">{{idx+1}}.{{item.queandopt[0].content}}</view>
+  <view>
+    <view class="weui-cells weui-cells_after-title" >
+      <radio-group bindchange="radioChange" data-id="{{idx}}" name="cid" >
+        <label class='radio'  wx:for="{{item.queandopt}}" wx:for-index="idx" wx:for-item="item2" >
+          <radio  color='#1AE694'  value="{{item2.cid}}" 
+          checked ="{{item2.ch}}"/>{{item2.moption}}</label>
+      </radio-group>
+    </view>
+  </view>
+  </view>
+  <view class="weui-btn-area btn">
+    <button class="weui-btn" form-type="submit" >确定</button>
+  </view>
+</form>

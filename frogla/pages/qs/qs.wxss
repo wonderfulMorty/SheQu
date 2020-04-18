@@ -1,0 +1,70 @@
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.content{
+  background:#f6f6f6;
+}
+
+.title{
+color: black;
+font-size: 20px;
+font-style:Arial; 
+font: Helvetica;
+text-align: center;
+}
+
+.title2{
+color: black;
+font-size: 20px;
+font-style:Arial; 
+font: Helvetica;
+text-align: left;
+}
+.user_info{
+color: black;
+font-size: 20px;
+font: Arial;
+font-style:normal; 
+text-align: center;
+}
+.btn{
+  margin: 15px
+}
+
+.radio{
+  display: flex
+}
+
+.profile-items.gender label  {
+    margin-right: 30rpx;
+}
+
+
+.home_address {
+  background-color: #e0004d;
+  text-align: center;
+  padding: 10rpx;
+}
+ 
+.home_address view {
+  padding-right: 30rpx;
+  padding-left: 30rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  white-space: nowrap;
+}
+ 
+.home_address view text {
+  color: white;
+  font-size: 14px;
+  padding-right: 40rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  padding-left: 20rpx;
+  white-space: nowrap;
+  border-radius: 30rpx;
+  background-color: #a00c3d;
+}

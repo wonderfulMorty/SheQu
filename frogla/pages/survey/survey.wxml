@@ -1,0 +1,15 @@
+<view class='shopDetail-box'>
+	<form bindsubmit="submitSurvey">
+		<view class="main">
+			<view class="profile-items house-id">
+				<text class="word">问卷</text>
+				<picker name="id" bindchange="changeSurvey" value="{{index}}" range="{{surveyArray}}" data-array="{{surveyArray}}" range-key="title">
+					<view class="building">
+						{{surveyArray[index].title}}
+					</view>
+				</picker>
+			</view>
+		</view>
+		<button form-type="submit"> 确定选题 </button>
+	</form>
+</view>

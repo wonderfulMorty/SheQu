@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/phone_number/phone_number",
+    "pages/my/my",
+    "pages/my/profile/profile",
+    "pages/my_paygoods/my_paygoods",
+    "pages/my_payments/my_payments",
+    "pages/my_qs/my_qs",
+    "pages/rege_login/rege_login",
+    "pages/vote_qa/vote_qa",
+    "pages/qs/qs",
+    "pages/survey/survey",
+    "pages/second_level/notice/notice",
+    "pages/second_level/notice/message/message",
+    "pages/second_level/repairs/repairs",
+    "pages/second_level/pay/pay",
+    "pages/second_level/suggest/suggest",
+    "pages/second_level/visitor/visitor",
+    "pages/second_level/secondhand/goods",
+    "pages/second_level/secondhand/goodspay/goodspay"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小区物业管理",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home2.png"
+      },
+      {
+        "pagePath": "pages/phone_number/phone_number",
+        "text": "常用电话",
+        "iconPath": "images/phone.png",
+        "selectedIconPath": "images/phone2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my2.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

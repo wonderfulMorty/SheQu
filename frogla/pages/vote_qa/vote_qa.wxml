@@ -1,0 +1,48 @@
+<view class='shopDetail-box'>
+	<view class="tab-right">
+		<view class="right-item {{tabArr.curBdIndex=='1'? 'active' : ''}}">
+			<view class="page">
+				<view class="page__bd">
+					<input class='titletext' bindinput="set_title_text" placeholder='请输出投票的标题(1-15个字)' placeholder-style='color:#ccc'
+					 type="text" value='{{write.title}}' />
+					<view class="weui-cells">
+						<view class="weui-cell weui-cell">
+							<view class="weui-cell__bd">
+								<textarea bindinput='set_content' class="weui-textarea" placeholder="请填写投票内容说明(2-80个字)" style="height: 3.3em;"
+								 placeholder-style='color:#ccc' value='{{write.text}}' />
+								<view class="weui-textarea-counter">{{votepack.text.length}}/80</view>
+				                </view>
+				            </view>
+				        </view>				        			
+				        <view class="weui-cells">
+				            <view class="weui-cell weui-cell_input" wx:for-items="{{optionList}}" wx:key="{{index}}">
+				                <view class="weui-cell__hd">
+				                    <image bindtap="delOption" src="{{item.icon}}" class="option-icon" data-index="{{index}}"></image>
+				                </view>
+				                <view class="weui-cell__bd"><input bindinput="recordValue" class="weui-input"  data-index="{{index}}" value="{{item.value}}" placeholder="选项{{index + 1}}（不得操作15个字符）" placeholder-style='color:#ccc' /></view>
+				            </view>
+				            <view class="weui-cell" bindtap="addOption" wx:if="{{showAddBtn}}" >
+				                <view class="weui-cell__hd">
+				                    <image src="../../images/4.png" class="option-icon"></image>
+				                </view>
+				                <view class="weui-cell__bd">添加选项</view>
+				            </view>
+				        </view>
+				        <view class="weui-cells__tips">最多支持15个选项，每个选项不超过40个字</view>
+				        <view class='error' wx:if="{{showerrormsg}}">{{errormsg}}</view>
+				        <view class="weui-btn-area">
+				            <button class="weui-btn" open-type="getUserInfo" bindgetuserinfo='saveVote'>确认发布</button>
+				        </view>				
+				    </view>
+				</view>			
+		</view>
+		<view class="right-item {{tabArr.curBdIndex=='2'? 'active' : ''}}">
+			<form bindsubmit="UserLogin">
+				<view class="main">
+					提交问卷
+				</view>
+				<button form-type="submit"> 提交问卷 </button>
+			</form>
+		</view>
+	</view>
+</view>
