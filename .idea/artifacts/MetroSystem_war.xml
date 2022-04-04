@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MetroSystem:war">
+    <output-path>$PROJECT_DIR$/MetroSystem/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>MetroSystem</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="SheQu.war">
+      <element id="artifact" artifact-name="MetroSystem:war exploded" />
+    </root>
+  </artifact>
+</component>
