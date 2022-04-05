@@ -12,6 +12,17 @@ import org.joda.time.DateTime;
  */
 @Data
 public class LinePageParam {
+
+
+    /**
+     * 分页大小，默认10
+     */
+    private Integer rowsOfPage=10;
+
+    /**
+     * 当前页码，默认1
+     */
+    private Integer currentPage=1;
     /**
      * 线路名
      */
@@ -32,54 +43,4 @@ public class LinePageParam {
      */
     private String cityCode;
 
-    /**
-     * 线路颜色
-     */
-    private String color;
-
-//    /**
-//     * 线路中的站点信息
-//     */
-//    private List<StationInLine> stationInLines;
-
-    /**
-     * 地铁站点数量
-     */
-    private Integer length;
-
-    /**
-     * 起始站
-     */
-    private String beginStation;
-
-    /**
-     * 终点站
-     */
-    private String endStation;
-
-    /**
-     * 起始时间
-     */
-    private DateTime beginTime;
-
-    /**
-     * 结束时间
-     */
-    private DateTime endTime;
-
-    /**
-     * 是否是反向路线
-     * 注：即起始站和终点站相反的
-     */
-    private boolean isReverse;
-
-    /**
-     * 分页大小，默认10
-     */
-    private Integer rowsOfPage=10;
-
-    /**
-     * 当前页码，默认1
-     */
-    private Integer currentPage=1;
 }

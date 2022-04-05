@@ -94,9 +94,6 @@
                     ,{field:'id',title:'id', sort: true}
                     ,{field:'name', title:'线路名'}
                     ,{field:'color', title:'颜色'}
-                    ,{field:'beginStation', title:'起始站'}
-                    ,{field:'endStation', title: '终点站'}
-                    ,{field:'length', title: '站点数'}
                     ,{field:'beginTime', title: '起始时间'}
                     ,{field:'endTime', title: '结束时间'}
                     ,{field:'city', title: '城市'}

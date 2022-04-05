@@ -122,22 +122,22 @@
                         </a>
                     </li >
                 </ul>
-                <ul class="sub-menu">
-                    <li>
-                        <a _href="${pageContext.request.contextPath}/sur_que">
-                            <i class="iconfont">&#xe70b;</i>
-                            <cite>问卷-题目关联管理</cite>
-                        </a>
-                    </li >
-                </ul>
-                <ul class="sub-menu">
-                    <li>
-                        <a _href="${pageContext.request.contextPath}/choice">
-                            <i class="iconfont">&#xe70b;</i>
-                            <cite>选项管理</cite>
-                        </a>
-                    </li >
-                </ul>
+<%--                <ul class="sub-menu">--%>
+<%--                    <li>--%>
+<%--                        <a _href="${pageContext.request.contextPath}/sur_que">--%>
+<%--                            <i class="iconfont">&#xe70b;</i>--%>
+<%--                            <cite>问卷-题目关联管理</cite>--%>
+<%--                        </a>--%>
+<%--                    </li >--%>
+<%--                </ul>--%>
+<%--                <ul class="sub-menu">--%>
+<%--                    <li>--%>
+<%--                        <a _href="${pageContext.request.contextPath}/choice">--%>
+<%--                            <i class="iconfont">&#xe70b;</i>--%>
+<%--                            <cite>选项管理</cite>--%>
+<%--                        </a>--%>
+<%--                    </li >--%>
+<%--                </ul>--%>
             </li>
             <li>
                 <a href="javascript:;">

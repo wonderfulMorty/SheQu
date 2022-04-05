@@ -7,7 +7,10 @@ import com.metro.param.station.StationPageParam;
 import com.metro.param.station.StationUpdateParam;
 import com.metro.pojo.FrankResult;
 import com.metro.pojo.Station;
+import com.metro.pojo.StationInRoute;
 import com.metro.pojo.frank.FrankPageAble;
+
+import java.util.List;
 
 /**
  * @Version 1.0
@@ -16,11 +19,15 @@ import com.metro.pojo.frank.FrankPageAble;
  * @Content:
  */
 public interface StationService extends IService<Station> {
-    FrankResult<Boolean> addStation(StationAddParam param);
+    Boolean addStation(StationAddParam param);
 
     FrankResult<Boolean> deleteStation(StationDeleteParam param);
 
     FrankResult<Boolean> updateStation(StationUpdateParam param);
 
     FrankResult<FrankPageAble<Station>> pageData(StationPageParam param);
+
+    FrankResult<Boolean> setRatio(String stationName, double ratio);
+
+//    List<StationInRoute> listStationInRoute();
 }

@@ -15,9 +15,13 @@
     <context:component-scan base-package="com.metro.controller.api"/>
 
     <!--注入SpringSwaggerConfig-->
-    <bean class="com.mangofactory.swagger.configuration.SpringSwaggerConfig" />
+<!--    <bean class="com.mangofactory.swagger.configuration.SpringSwaggerConfig" />-->
+    <bean class="com.metro.config.SwaggerConfig" />
     <!--swagger 接口文档静态资源-->
     <mvc:resources mapping="/swagger/**" location="/WEB-INF/swagger/"/>
+
+    <mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars"/>
+    <mvc:resources mapping="swagger-ui.html" location="classpath:/META-INF/resources/" />
 
     <!-- 开启SpringMVC注解模式 -->
     <!--<mvc:annotation-driven/>-->

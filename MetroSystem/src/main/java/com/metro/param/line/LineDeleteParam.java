@@ -11,7 +11,8 @@ import lombok.Data;
 @Data
 public class LineDeleteParam {
 
+    private Integer id;
+
     private String name;
 
-    private Integer id;
 }

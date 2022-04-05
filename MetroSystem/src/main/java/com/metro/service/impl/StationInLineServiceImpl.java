@@ -5,10 +5,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.metro.mapper.StationInLineMapper;
 import com.metro.param.stationInLine.*;
-import com.metro.pojo.FrankResult;
-import com.metro.pojo.Line;
-import com.metro.pojo.Station;
-import com.metro.pojo.StationInLine;
+import com.metro.pojo.*;
 import com.metro.pojo.frank.FrankPageAble;
 import com.metro.pojo.frank.FrankPageInfo;
 import com.metro.service.LineService;
@@ -102,12 +99,10 @@ public class StationInLineServiceImpl extends ServiceImpl<StationInLineMapper, S
             //如果次序为1，则设为起始站
             stationInLine.setIsBeginStation(1);
             stationInLine.setIsEndStation(0);
-            lineService.updateBeginStation(stationInLine.getLineName(), stationInLine.getName());
         } else if (order == list.size() + 1) {
             //如果次序为原size+1，则设为终点站
             stationInLine.setIsBeginStation(0);
             stationInLine.setIsEndStation(1);
-            lineService.updateEndStation(stationInLine.getLineName(), stationInLine.getName());
         } else {
             stationInLine.setIsBeginStation(0);
             stationInLine.setIsEndStation(0);
@@ -188,11 +183,9 @@ public class StationInLineServiceImpl extends ServiceImpl<StationInLineMapper, S
             if (e.getLineOrder() == 1) {
                 e.setIsBeginStation(1);
                 e.setIsEndStation(0);
-                lineService.updateBeginStation(e.getLineName(), e.getName());
             } else if (e.getLineOrder() == list.size()) {
                 e.setIsBeginStation(0);
                 e.setIsEndStation(1);
-                lineService.updateEndStation(e.getLineName(), e.getName());
             } else {
                 e.setIsBeginStation(0);
                 e.setIsEndStation(0);
@@ -228,4 +221,6 @@ public class StationInLineServiceImpl extends ServiceImpl<StationInLineMapper, S
         FrankPageAble<StationInLine> pageAble = new FrankPageAble(page.getRecords(), pageInfo, page.getTotal());
         return FrankResult.success(pageAble);
     }
+
+
 }

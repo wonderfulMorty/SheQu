@@ -39,6 +39,48 @@
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 
+  <!-- springMVC核心配置 -->
+  <servlet>
+    <servlet-name>dispatcherServlet</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <!--spingMVC的配置路径 -->
+      <param-value>classpath:spring-mvc.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <!-- 拦截设置 -->
+  <servlet-mapping>
+    <servlet-name>dispatcherServlet</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>/swagger-ui.html</url-pattern>
+  </servlet-mapping>
+
+  <!--<servlet-mapping>-->
+  <!--<servlet-name>default</servlet-name>-->
+  <!--<url-pattern>*.png</url-pattern>-->
+  <!--</servlet-mapping>-->
+
+  <!--<servlet-mapping>-->
+  <!--<servlet-name>default</servlet-name>-->
+  <!--<url-pattern>*.js</url-pattern>-->
+  <!--</servlet-mapping>-->
+
+  <!--<servlet-mapping>-->
+  <!--<servlet-name>default</servlet-name>-->
+  <!--<url-pattern>*.css</url-pattern>-->
+  <!--</servlet-mapping>-->
+
+  <servlet-mapping>
+    <servlet-name>dispatcherServlet</servlet-name>
+    <url-pattern>/v2/api-docs</url-pattern>
+  </servlet-mapping>
+
   <welcome-file-list>
     <welcome-file>/login.jsp</welcome-file>
   </welcome-file-list>

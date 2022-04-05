@@ -28,24 +28,29 @@ public class Route {
     private Integer length;
 
     /**
-     * 未换乘
+     * 线路名
      */
-    private List<RouteLineInfo> line1;
+    private String line;
 
-    /**
-     * 第一次换乘
-     */
-    private List<RouteLineInfo> line2;
-
-    /**
-     * 第二次换乘
-     */
-    private List<RouteLineInfo> line3;
-
-    /**
-     * 第三次换乘
-     */
-    private List<RouteLineInfo> line4;
+//    /**
+//     * 未换乘
+//     */
+//    private List<RouteLineInfo> line1;
+//
+//    /**
+//     * 第一次换乘
+//     */
+//    private List<RouteLineInfo> line2;
+//
+//    /**
+//     * 第二次换乘
+//     */
+//    private List<RouteLineInfo> line3;
+//
+//    /**
+//     * 第三次换乘
+//     */
+//    private List<RouteLineInfo> line4;
 
     /**
      * 所用的时间

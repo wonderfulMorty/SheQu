@@ -5,7 +5,9 @@ import com.metro.param.line.*;
 import com.metro.pojo.FrankResult;
 import com.metro.pojo.Line;
 import com.metro.pojo.Station;
+import com.metro.pojo.StationInRoute;
 import com.metro.pojo.frank.FrankPageAble;
+import com.metro.result.LineResult;
 
 import java.util.List;
 
@@ -25,15 +27,4 @@ public interface LineService extends IService<Line> {
 
     FrankResult<FrankPageAble<Line>> pageLine(LinePageParam param);
 
-    FrankResult getLine(LineGetParam param);
-
-    Boolean updateBeginStation(String lineName, String beginStation);
-
-    Boolean updateEndStation(String lineName, String EndStation);
-
-    Integer getLength(String lineName);
-
-    void updateLength(String lineName, Integer length);
-
-    List getSameLines(Station start, Station end);
 }

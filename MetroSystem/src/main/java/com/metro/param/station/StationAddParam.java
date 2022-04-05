@@ -36,10 +36,7 @@ public class StationAddParam {
      * 站点颜色
      */
     private String color;
-    /**
-     * 是否是换乘站
-     */
-    private boolean isExchange;
+
     /**
      * 坐标定位
      */

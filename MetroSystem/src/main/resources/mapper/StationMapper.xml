@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.metro.mapper.StationMapper">
+
+    <insert id="insertStation" parameterType="java.util.Collection">
+        insert into station(name, city, location, color)
+        values
+        <foreach collection="line" item="item" separator=",">
+                (#{name},#{city},#{location},#{color})
+        </foreach>
+    </insert>
+
+</mapper>

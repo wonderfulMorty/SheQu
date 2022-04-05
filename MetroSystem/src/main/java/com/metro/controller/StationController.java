@@ -37,8 +37,7 @@ public class StationController {
     @PostMapping("/add")
     public FrankResult<Boolean> addStation(@RequestBody StationAddParam param) {
         Station station = BeanCopyUtils.copyProperties(param, Station.class);
-        stationService.save(station);
-        return FrankResult.success(true);
+        return FrankResult.success(stationService.addStation(param));
     }
 
     //站点信息删除
@@ -55,13 +54,14 @@ public class StationController {
     }
 
     //站点信息编辑
-    @PostMapping("edit")
+    @PostMapping("/edit")
     public FrankResult<Boolean> editStation(@RequestBody StationUpdateParam param) {
         Station station = BeanCopyUtils.copyProperties(param, Station.class);
-        stationService.update(station, new LambdaQueryWrapper<Station>().eq(Station::getName, param.getName())
-                .eq(Station::getId, param.getId()));
+        stationService.update(station, new LambdaQueryWrapper<Station>().eq(Station::getId, param.getId()));
         return FrankResult.success(true);
     }
+
+
 
 
 }

@@ -7,6 +7,7 @@ import com.metro.param.line.LineUpdateParam;
 import com.metro.pojo.FrankResult;
 import com.metro.pojo.Line;
 import com.metro.pojo.frank.FrankPageAble;
+import com.metro.result.LineResult;
 import com.metro.service.LineService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -42,7 +43,7 @@ public class LineController {
         return FrankResult.success(lineService.updateLine(param));
     }
 
-//    @PostMapping("/page")
+    @PostMapping("/page")
     @RequestMapping(value = "/page",produces="application/json;charset=UTF-8")
     public FrankResult<FrankPageAble<Line>> pageLine(@RequestBody LinePageParam param) {
         return lineService.pageLine(param);

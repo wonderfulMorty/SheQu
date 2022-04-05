@@ -24,4 +24,8 @@ public class StationPageParam {
      * 站点id
      */
     private Integer id;
+    /**
+     * 所在线路
+     */
+    private String line;
 }

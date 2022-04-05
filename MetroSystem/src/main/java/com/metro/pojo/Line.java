@@ -45,25 +45,6 @@ public class Line {
      */
     private String color;
 
-    /**
-     * 线路中的站点信息
-     */
-    private List<Station> station;
-
-    /**
-     * 地铁站点数量
-     */
-    private Integer length;
-
-    /**
-     * 起始站
-     */
-    private String beginStation;
-
-    /**
-     * 终点站
-     */
-    private String endStation;
 
     /**
      * 起始时间
@@ -75,24 +56,15 @@ public class Line {
      */
     private String endTime;
 
-    /**
-     * 是否是反向路线
-     * 注：即起始站和终点站相反的
-     */
-    private boolean isReverse;
 
-    public Line(String name, String id, String city, String cityCode, String color, Integer length, String beginStation, String endStation, String beginTime, String endTime, boolean isReverse) {
+    public Line(String name, String id, String city, String cityCode, String color, String beginTime, String endTime) {
         this.name = name;
         this.id = id;
         this.city = city;
         this.cityCode = cityCode;
         this.color = color;
-        this.length = length;
-        this.beginStation = beginStation;
-        this.endStation = endStation;
         this.beginTime = beginTime;
         this.endTime = endTime;
-        this.isReverse = isReverse;
     }
 
     public Line() {

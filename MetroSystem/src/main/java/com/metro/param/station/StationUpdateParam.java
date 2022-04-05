@@ -13,13 +13,13 @@ import java.util.List;
 @Data
 public class StationUpdateParam {
     /**
-     * 站点名称
-     */
-    private String name;
-    /**
      * 站点id
      */
     private Integer id;
+    /**
+     * 站点名称
+     */
+    private String name;
     /**
      * 站点所在城市
      */
@@ -37,11 +37,11 @@ public class StationUpdateParam {
      */
     private String color;
     /**
-     * 是否是换乘站
-     */
-    private boolean isExchange;
-    /**
      * 坐标定位
      */
     private String location;
+    /**
+     * 换乘阻抗系数
+     */
+    private double ratio;
 }
